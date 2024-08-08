@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.text-container, .text-editor {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+
+.text-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.text-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.text-editor {
+    width: 100%;
+    height: 400px;
+    resize: none;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+th:hover {
+    background-color: #e0e0e0;
+}
+
+.resizable {
+    position: relative;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+
+.resizable .resizable-content {
+    padding: 10px;
+}
+
+.resizer {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize;
+}

@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" id="articleContainer">
+      <div id="textContainer" class="text-container" contenteditable="false">
+        <h1>The Magic of Bali</h1>
+        <h2>An Introduction to Paradise</h2>
+        <p>
+          Bali, an Indonesian island known for its forested volcanic mountains,
+          iconic rice paddies, beaches and coral reefs, is a destination that
+          enchants travelers from all over the world. It's a place where
+          culture, nature, and adventure come together to create a truly unique
+          experience.
+        </p>
+        <h2>Culture and Traditions</h2>
+        <p>
+          The rich culture of Bali is evident in its many temples, dance
+          performances, and festivals. The island is home to thousands of
+          temples, each with its own unique ceremonies and rituals. The Balinese
+          people are deeply spiritual, and their daily lives are filled with
+          various religious practices and traditions.
+        </p>
+        <h2>Natural Beauty</h2>
+        <p>
+          Bali is renowned for its stunning natural landscapes. From the
+          terraced rice paddies of Ubud to the rugged cliffs of Uluwatu, the
+          island offers a diverse array of natural wonders. The beaches are some
+          of the most beautiful in the world, with golden sands and
+          crystal-clear waters perfect for surfing, snorkeling, and sunbathing.
+        </p>
+        <h2>Adventure and Activities</h2>
+        <p>
+          For those seeking adventure, Bali does not disappoint. The island
+          offers a wide range of activities, from trekking up volcanoes and
+          exploring hidden waterfalls to diving in vibrant coral reefs and
+          riding the waves at famous surf spots. There's something for everyone,
+          whether you're an adrenaline junkie or just looking to relax and
+          unwind.
+        </p>
+        <h2>Culinary Delights</h2>
+        <p>
+          Bali's culinary scene is as diverse as its landscape. The island
+          boasts a wide variety of restaurants and food stalls, offering
+          everything from traditional Balinese cuisine to international dishes.
+          Don't miss trying local specialties such as Nasi Goreng, Satay, and
+          Babi Guling, which are sure to tantalize your taste buds.
+        </p>
+      </div>
+      <textarea
+        id="textEditor"
+        class="text-editor"
+        style="display: none"
+      ></textarea>
+    </div>
+
+
+    <div class="container" id="sortableTableContainer">
+      <h1>European Capitals by Population</h1>
+      <table id="sortableTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">Capital</th>
+            <th onclick="sortTable(1)">Country</th>
+            <th onclick="sortTable(2)">Population</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>London</td>
+            <td>United Kingdom</td>
+            <td>9126366</td>
+          </tr>
+          <tr>
+            <td>Berlin</td>
+            <td>Germany</td>
+            <td>3769495</td>
+          </tr>
+          <tr>
+            <td>Madrid</td>
+            <td>Spain</td>
+            <td>3223334</td>
+          </tr>
+          <tr>
+            <td>Rome</td>
+            <td>Italy</td>
+            <td>2870500</td>
+          </tr>
+          <tr>
+            <td>Kyiv</td>
+            <td>Ukraine</td>
+            <td>2963199</td>
+          </tr>
+          <tr>
+            <td>Paris</td>
+            <td>France</td>
+            <td>2148327</td>
+          </tr>
+          <tr>
+            <td>Bucharest</td>
+            <td>Romania</td>
+            <td>1883425</td>
+          </tr>
+          <tr>
+            <td>Vienna</td>
+            <td>Austria</td>
+            <td>1911191</td>
+          </tr>
+          <tr>
+            <td>Budapest</td>
+            <td>Hungary</td>
+            <td>1752286</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container resizable" id="resizableContainer">
+      <div class="resizable-content">
+        <h2>The Continents of the World</h2>
+            <p>Our planet is divided into seven continents, each with its own unique geography, culture, and history. These continents are Africa, Antarctica, Asia, Europe, North America, Australia (Oceania), and South America.</p>
+            <p>Asia is the largest and most populous continent, home to diverse cultures and some of the world's oldest civilizations. Africa is known for its vast deserts, rich wildlife, and vibrant cultures. North America and South America offer diverse landscapes ranging from icy tundras to tropical rainforests. Europe, though smaller in size, has a profound impact on global history and culture.</p>
+            <p>Australia, often referred to as Oceania when including the Pacific islands, is the smallest continent and known for its unique wildlife and landscapes. Antarctica, the coldest and most remote continent, is a land of ice and snow, largely uninhabited except for research stations.</p>
+            <p>Together, these continents form the diverse tapestry of our world, each contributing to the planet's rich natural and cultural heritage.</p>
+        </div>
+      <div class="resizer"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
